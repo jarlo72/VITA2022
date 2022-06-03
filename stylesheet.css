@@ -1,0 +1,320 @@
+/*
+    Before we get into things, a brief style guide reminder.
+    Comments for communication use your full name, like in this one.
+    For comments that need to stick around through the submission, initial and date.
+    Please initial and date if you modify someone else's code, unless it's very minor.
+
+    If you need to modify the CSS of an element for your page (ie, <h1>) make sure you
+     use a Class or ID for it, so you don't break everyone else's page!
+*/
+
+* { /* settings for every possible element on the page */
+    font-family: 'Helvetica', 'Sans-serif';
+    margin:0;
+    box-sizing: border-box; /* as per w3schools, changes calculation of total size of elements to give better CSS control */
+}
+
+/* -------------- element settings -------------- */
+
+h1 { 
+    font-size: 5vw;
+    margin-left: 2vw;
+}
+h2 { 
+    font-size: 30pt;
+}
+h3 { 
+    float: none;
+    font-size: 18pt;
+}
+h4 {
+    font-size: 16pt;
+    padding-top:15px;
+}
+h5 { 
+    font-size: 13pt;
+}
+p { 
+    font-size: 12pt;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+body {
+    background-color: #ffffff;
+}
+
+/* ---------------- Semantic Element settings -------------------------------------- */
+
+
+header { 
+    background-image: url("images/hiking2.jpg"); /* Source: https://unsplash.com/photos/YodH2WzN6YU */
+    height: 30vw;
+    background-size: cover;
+    background-position: 50% 70%;
+    background-repeat: no-repeat; /* background image and details added for header graphic */
+    padding:15px;
+    font-size: 4em;
+    display: flex; /* as per https://www.w3schools.com/css/css3_flexbox.asp */
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo { 
+    height: 8vw;
+    padding-right: 30vw;
+}
+
+/* ---------------- Navbar settings -------------------------------------- */
+
+nav { 
+    font-size: 12pt;
+    background-color: rgb(114, 175, 85);     /*  colour palette */
+    overflow: hidden; /* - as per https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+nav a { 
+    font-weight:bold;
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0); 
+    text-align: center;
+    padding: 10px;
+    padding-right:2vw;
+    padding-left:2vw;
+    transition: all .3s ease;
+    text-decoration: none; /*avoids underlines */
+    border-right:1px solid #bbb;
+} 
+
+nav a:hover { 
+    background-color: #0d8a41; /*  colour palette */
+}          
+nav a.active { 
+    background-color: #eceee6; /*  colour palette  */
+}
+
+nav a.icon {
+    float: right;
+    display: block;
+}
+
+nav a.solutionlink {
+	float:right;
+	display: block;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	padding-left: 2vw;
+    Padding-right: 2vw;	
+	border-left:1px solid #bbb;
+	text-decoration: none;
+}
+nav a:hover.solutionlink { 
+    background-color: #ffae00; 
+}
+.topnav.responsive {
+    position: relative;
+    position: fixed;
+}
+.topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+
+/* ---------------- Navbar settings END ------------- */
+
+main { /*  sets up flexbox, to simplify positioning of everything. */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+section { /* aligns subsequent sections to the column format consistent with main */
+    margin: 1vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    order: 1;
+    flex: 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+footer { /* footer formatting sourced from https://www.w3schools.com/cssref/pr_class_clear.asp */
+    background-color: #1f3021;
+    color: #cecece;
+	border-top: 1px solid gray;
+	padding: 2vw;
+	position: static;
+    bottom: 0;
+    margin-top:20px;
+}
+
+.footernotes {
+    font-size: 10pt;
+    text-align: center;
+}
+
+/* --------------------------------------- General Styling ------------------------- */
+
+
+.underlineTitle { /* underlining titles (h3) for visual appeal and organization. could be used for titles in other pages */
+    color: #000000;
+    border-bottom: 1px solid #b8b2cf;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.deadlink { 
+	text-decoration:none;
+}    
+.deadlink:hover { 
+	text-decoration: underline;
+    cursor:pointer;
+} 
+
+/* DEAD TEXT */
+.quote{ /* Quotation styling */
+    text-align: center;
+    font-style: italic;
+}
+
+.ContentParagraph { /* JD 12-07 -  styling for paragraphs explaining content */
+    padding-top:10px;
+    padding-bottom:5px;
+}
+
+/* -------------------- Landing / Index / Meet the Team Page Styling ------------------------- */ 
+
+.projectTitle{
+    text-align: center;
+    margin-top:20px;
+    margin-bottom:20px; 
+    color: #0d8a41;
+}
+
+.folks { /*  the bio panels to go in rows, wrapping around if made smaller */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.bio { /* sets the bio panels to arrange their contents vertically, full-width on small screens */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    margin: .5vw;
+
+}
+
+.profiles { /*sets images to greyscale for bios */
+    filter: grayscale(100%);
+    border-radius: 100%;
+    padding: 15px;
+
+}
+.profiles:hover { /* bio images switch to colour on mouseover */
+    filter: none;
+}
+
+.name {
+    font-size: 15pt;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.role {
+    font-size: 12pt;
+    font-style: italic;
+    padding: 5px;
+}
+
+/* --------------------------------------- Methodology Page Styling ------------------------- */ 
+
+.serve {                /* Sets the aside so that the text will centre on the image, or vise-versa depending on screen size */
+    display: flex;      /* Also establishes the container to flexbox for future formatting */
+    height: max-content;
+    align-items: center;
+    margin-top: 1vw;
+}
+.serve p {              /* the text looks nicer when it lines up on both edges */
+    text-align:justify;
+}
+.serve:first-child {    /* Removes the spacing on the first element so we don't get weird gaps */
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.leftText {             /*Left-aligned sections use default attributes */
+    flex-direction: row;
+}
+.rightText {            /*Attributes for right-aligned sections: */
+    flex-direction: row-reverse;
+}
+.rightText h3 {
+    text-align: right;
+}
+p.rightP {              /* override the widening, move the signatures to the right */
+    text-align: right;
+}
+.picBox { /* Sets the image width for the page at any resolution, but hides it for small screens */
+    width: 30vw;
+}
+.picSet {               /* Setting the image max-sizing, which also controls the article size on large screens, and rounds the corners*/
+    max-width: 25vw;
+    max-height: 300px;
+    border-radius: 10px;
+}
+.smallimageright { /*  Setting the image max-sizing, which also controls the article size on large screens, and rounds the corners */
+    float: right;
+    border: 2px solid #555; 
+    max-width: 28vw;
+    max-height: 200px;
+    border-radius: 10px; 
+    padding: 2px;
+    margin: 10px;
+}
+.smallimageleft { /* Image styling for this specific section */
+    float: left;
+    border: 2px solid #555;
+    max-width: 28vw;
+    max-height: 200px;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+/* --------------------------------------- Solution Page Styling ------------------------- */ 
+
+.solutionImage{
+    display: block;
+    margin-bottom: 3%;
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 800px) {
+    /* ---------- About Us styling for Landing page ---------- */
+    .bio { 
+        width: 20vw;
+    }
+    .profiles { 
+        filter: grayscale(100%);
+    }
+    .profiles:hover { 
+        filter: none;
+    }
+}
