@@ -154,52 +154,8 @@
           view: view,
           content: legend
         });
-      view.ui.add(bgExpand2, "top-right");   
-
-      function fadeVisibilityOn(layer) {
-          let animating = true;
-          let opacity = 0;
-          // fade layer's opacity from 0 to
-          // whichever value the user has configured
-          const finalOpacity = layer.opacity;
-          layer.opacity = opacity;
-
-          view.whenLayerView(layer).then((layerView) => {
-
-            function incrementOpacityByFrame() {
-              if((opacity >= finalOpacity) && animating){
-                animating = false;
-                return;
-              }
-
-              layer.opacity = opacity;
-              opacity += 0.05;
-
-              requestAnimationFrame(incrementOpacityByFrame);
-            }
-            
-            // Wait for tiles to finish loading before beginning the fade
-            watchUtils.whenFalseOnce(layerView, "updating", function(updating){
-              requestAnimationFrame(incrementOpacityByFrame);
-            });
-
-          });
-        }
-            
+      view.ui.add(bgExpand2, "top-right");
       
-      view.when().then(() => {
-          // When the user toggles a layer on, transition
-          // the layer's visibility using opacity
-          layerList.operationalItems.forEach((item) => {
-            item.watch("visible", (visible) => {
-              if(visible){
-                fadeVisibilityOn(item.layer);
-              }
-            });
-          });
-        });
-      
-
 
       // Elevation profile widget from https://developers.arcgis.com/javascript/latest/sample-code/widgets-elevation-profile/
       const elevationProfile = new ElevationProfile({
