@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Self Guided Tour Solution</title>
+  <title>Vancouver Island Trail Interactive Web Map</title>
   <link rel="icon" href="images/logo_v2.png"> <!--Reference: https://www.delftstack.com/howto/html/html-tab-icon/-->
   <style>
     html, body, #viewDiv { /* Styling for view div */
@@ -54,12 +54,16 @@
       });
 
 
-      // Toggle Layer Visibility
+      // Toggle Layer Visibility from https://developers.arcgis.com/javascript/latest/sample-code/sandbox/?sample=animation-layer-visibility 
 
       const layerList = new LayerList({
           view: view
         });
-        view.ui.add(layerList, "bottom-left");
+      const llExpand = new Expand({ // Expandable legend widget from https://developers.arcgis.com/javascript/latest/sample-code/widgets-expand/
+          view: view,
+          content: layerList
+        });
+      view.ui.add(llExpand, "top-right");
 
       function fadeVisibilityOn(layer) {
         let animating = true;
@@ -104,7 +108,6 @@
           });
         });
       });
-
 
 
       // Display and tracking location for mobile functionality. From https://developers.arcgis.com/javascript/latest/display-your-location/
