@@ -49,7 +49,7 @@ body {
 
 header { 
     background-image: url("images/hiking2.jpg"); /* Source: https://unsplash.com/photos/YodH2WzN6YU */
-    height: 30vw;
+    height: 25vw;
     background-size: cover;
     background-position: 50% 70%;
     background-repeat: no-repeat; /* background image and details added for header graphic */
@@ -57,31 +57,33 @@ header {
     font-size: 4em;
     display: flex; /* as per https://www.w3schools.com/css/css3_flexbox.asp */
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
 #logo { 
     height: 8vw;
-    padding-right: 30vw;
+    padding-left: 10vw;
 }
+
 
 /* ---------------- Navbar settings -------------------------------------- */
 
 nav { 
     font-size: 12pt;
-    background-color: rgb(114, 175, 85);     /*  colour palette */
+    background-color: rgb(93, 109, 250);     /*  colour palette */
     overflow: hidden; /* - as per https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    border-bottom: 1px solid gray;
 }
 
 nav a { 
     font-weight:bold;
     float: left;
     display: block;
-    color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255); 
     text-align: center;
     padding: 10px;
     padding-right:2vw;
@@ -92,10 +94,11 @@ nav a {
 } 
 
 nav a:hover { 
-    background-color: #0d8a41; /*  colour palette */
+    background-color: rgb(44, 60, 202); /*  colour palette */
 }          
 nav a.active { 
     background-color: #eceee6; /*  colour palette  */
+    color:#000000;
 }
 
 nav a.icon {
@@ -151,8 +154,8 @@ section { /* aligns subsequent sections to the column format consistent with mai
 }
 
 footer { /* footer formatting sourced from https://www.w3schools.com/cssref/pr_class_clear.asp */
-    background-color: #1f3021;
-    color: #cecece;
+    background-color:  rgb(93, 109, 250);
+    color: #ffffff;
 	border-top: 1px solid gray;
 	padding: 2vw;
 	position: static;
@@ -200,7 +203,7 @@ footer { /* footer formatting sourced from https://www.w3schools.com/cssref/pr_c
     text-align: center;
     margin-top:20px;
     margin-bottom:20px; 
-    color: #0d8a41;
+    color: #0063f7;
 }
 
 .folks { /*  the bio panels to go in rows, wrapping around if made smaller */
