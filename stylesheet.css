@@ -48,7 +48,7 @@ body {
 
 
 header { 
-    background-image: url("images/hiking2.jpg"); /* Source: https://unsplash.com/photos/YodH2WzN6YU */
+    background-image: url("images/vitrail1.jpg"); /* Source: https://unsplash.com/photos/YodH2WzN6YU */
     height: 25vw;
     background-size: cover;
     background-position: 50% 70%;
@@ -244,6 +244,12 @@ footer { /* footer formatting sourced from https://www.w3schools.com/cssref/pr_c
     padding: 5px;
 }
 
+.contact{
+    font-size: 12pt;
+    padding: 5px;
+    text-align: center;
+}
+
 /* --------------------------------------- Methodology Page Styling ------------------------- */ 
 
 .serve {                /* Sets the aside so that the text will centre on the image, or vise-versa depending on screen size */
@@ -303,10 +309,14 @@ p.rightP {              /* override the widening, move the signatures to the rig
 .solutionImage{
     display: block;
     margin-bottom: 3%;
-    max-width: 50vw;
+    width: 70vw;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
+}
+
+.solim2{
+    width: 50vw;
 }
 
 @media screen and (min-width: 800px) {
