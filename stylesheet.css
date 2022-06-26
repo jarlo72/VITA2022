@@ -323,6 +323,7 @@ p.rightP {              /* override the widening, move the signatures to the rig
 	display: block;
 	width: 560px;
 	height: 315px;
+    text-align: center;
 }
 
 .solim2{
