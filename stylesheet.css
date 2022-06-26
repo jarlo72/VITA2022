@@ -321,8 +321,8 @@ p.rightP {              /* override the widening, move the signatures to the rig
 
 .embedYoutubeVid{
 	display: block;
-	width = "560";
-	height = "315";
+	width: 560px;
+	height: 315px;
 }
 
 .solim2{
