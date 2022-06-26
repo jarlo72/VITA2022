@@ -315,6 +315,12 @@ p.rightP {              /* override the widening, move the signatures to the rig
     border-radius: 5px;
 }
 
+.embedYoutubeVid{
+	display: block;
+	width = "560";
+	height = "315";
+}
+
 .solim2{
     width: 50vw;
 }
