@@ -44,6 +44,10 @@ body {
     background-color: #ffffff;
 }
 
+li:not(:first-child) {
+    margin-top: 1em;
+  }
+
 /* ---------------- Semantic Element settings -------------------------------------- */
 
 
