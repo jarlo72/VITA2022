@@ -98,25 +98,33 @@
                     </article>
                 </article>
 
-                <!-- Start of Offline Viewing Functionality -->
+               <!-- Start of Offline Viewing Functionality -->
                 <article class="ContentParagraph">
                     <h3 class="underlineTitle">Solution for Offline Viewing</h3> 
-                    <p>General Text</p>
+                    <p>The offline viewing solution involves creating downloadable files that can be access on an offline capable navigation app such as 
+                    <i>Avenza Maps: Offline Mapping</i> on a mobile device (smart phone)</p>
                     
-                    <!-- Template for content with text and big image below -->
-                    <h4>Subheading</h4>
-                    <p> Text Content</p>
-                    <img class="solutionImage" src="" alt="Relevant Big Image">
+                    <!-- Workflow for this deliverable -->
+                    <h4>Workflow Diagram</h4>
+                    <p>Development of the Offline Viewing resources would follow directly after the geodatabase, with reference with the interactive web 
+                    map to keep consistancy with the symbologies and stylings between the two parts. It is a mostly linear process, with a small section of iterative steps 
+                    as a part of the whole proces. It involves finding the optimal methods of creating files from the geodatabase to the offline navigations maps operating 
+                    on the <i>Avenza Maps: Offline Mapping</i> mobile app.</p>
+                    <a href="images/Offline_Maps_WorkflowModel.png"><img class="solutionImage" src="images/Offline_Maps_WorkflowModel.png" alt="Offline Viewing Workflow"></a>
 
                     <!-- Template for content with text and small image on right -->
                     <article class = "serve leftText">
                         <div class="textZone">
-                            <h4>Sub heading</h4>
-                            <p>Text Content</p>
+                            <h4>Elements of the Process</h4>
+                            	<p class="ContentParagraph">The process illustrated in the flowchart above makes use of <b>Data acquisition and processing</b> and <b>Cartographic Visualization Principles</b> to make offline viewing possible.</p>
+                            <h5>Data Acquisition and Processing</h5>
+				                <p class="ContentParagraph">ArcGIS Pro is used to group and convert layers into KMZ format using the "Layer to KML" tool from the ArcGIS Pro Toolbox, after they are symbolized correctly. These files carries different 
+                                projection (WGS1984) from the geodatabase. And thus needs to make sure that there are no incompatiblity with PDF base maps which has different projection.
+                                </p>
+                            <h5>Cartographic Visualization Principles</h5>
+                            	<p class="ContentParagraph">PDF base maps are produced with "Export Layout" function in ArcGIS Pro. Layers are styled and symbolized the same way as the interactive web map to keep consistancy, before conversion.
+                                </p>
                         </div>
-                        <figure class="picBox">
-                            <img src="" alt="Relevant Picture" class="smallimageright">
-                        </figure> 
                     </article>
                 </article>
    
