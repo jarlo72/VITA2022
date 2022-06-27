@@ -28,9 +28,10 @@
                 <!-- Early Planning - GEOM68 Project Planning -->
                 <article class="ContentParagraph">
                     <h3 class="underlineTitle">Early Planning - GEOM68 Project Planning</h3> 
-                    <p class="ContentParagraph">A general workflow was conceived during the project planning phase. The plan would be to achieve objectives and produce deliverables in logical sequence.
-                        A file geodatabase would be created first to establish that centralized data hub from which all data can be processed and published from. 
-                        From there, the workflows to develop the Interactive Web-Map and Offline Viewing Solution can be established concurrently to maximize time / scheduling.
+                    <p class="ContentParagraph">A general workflow was conceived during the project's planning phase. The plan would be to achieve objectives and
+			    produce deliverables in a logical sequence. Creating a file geodatabase would be the first item to establish a centralized data hub from
+			    which all data can be processed and published. From there, the workflows to develop the Interactive Web-Map and Offline Viewing Solution
+			    can be established concurrently to maximize time/scheduling.
                     </p>
                     <a href="images/generalflowchart.JPG"><img class="solutionImage solim2" src="images/generalflowchart.JPG" alt="Relevant Big Image"></a>
                 </article>
@@ -38,32 +39,31 @@
                 <!-- Data Acquisition and File Geodatabase -->
                 <article class="ContentParagraph">
                     <h3 class="underlineTitle">Data Acquisition and File Geodatabase</h3> 
-                    <p>This section of the methodology involves and showcases the file geodatabase and its models (toolboxes) that were constructed during this project</p>
+                    <p>This section showcases the development of the file geodatabase and its models (toolboxes) during this project.</p>
                     
                     <!-- Template for content with text and big image below -->
                     <h4>Workflow Diagram</h4>
-                    <p>The diagaram here is the first instantiation of this project that collects data from the client and manipulates it accordingly to plan. This follows a mostly linear workflow
-                    with a few loop-backs for either improving or editing particular objectives and follows with the Interactive Web Map in the latter.</p>
+                    <p>The diagram here is the first instantiation of this project that collects data from the client and manipulates it accordingly to plan; this follows a linear workflow
+			    with a few loop-backs for either improving or editing particular objectives and follows with the Interactive Web Map in the latter.</p>
                     <a href="images/FGDB_Methodology_Workflow.PNG"><img class="solutionImage" src="images/FGDB_Methodology_Workflow.PNG" alt="File Geodatabase Workflow"></a>
 
                     <!-- Template for content with text and small image on right -->
                     <article class = "serve leftText">
                         <div class="textZone">
                             <h4>Elements of the Process</h4>
-                            <p>Thew following descriptions are a brief overview of what has been utilized in this deliverable; that is, <strong>File Geodatabase</strong> and <strong>Spatial Analysis and Data Preprocessing</strong>.</p>
+                            <p>The following descriptions are a brief overview of what was utilized in this deliverable: <strong>File Geodatabase</strong> and <strong>Spatial Analysis and Data Preprocessing</strong>.</p>
                             <h5>File Geodatabase</h5>
-                            <p class="ContentParagraph"> The File Geoadatabase portion was done with esris' ArcGIS Pro software. Data from the client was collected and imported to an ArcGIS Pro Project
-                                where they would be exported to the default one that is created. Afterwards, Qiality Assurance/Quality Control (QA/QC) was done on the data to make sure it was as user-
-                                friendly and readable as possible, using the clients requests. This includes modifying the datas' attribute tables and its columns, rows, and values, and metadata.
+                            <p class="ContentParagraph"> Had finished the File Geodatabase with Esri's ArcGIS Pro software. Data from the client was collected and imported to an ArcGIS Pro Project and exported to the
+				 default geodatabase. Afterwards, performing Quality Assurance/Quality Control (QA/QC) on the data to ensure it was as user-friendly and readable as possible, using the clients' requests.
+				 This includes modifying the data's attribute tables and their columns, rows, values, and metadata.
                             </p>
                             <h5>Spatial Analysis and Data Preprocessing</h5>
-                            <p class="ContentParagraph"> The Data Preprocessing portion involved taking what was previously mentioned in the first paragraph and editing the data according to Vancouver Island Trail Assoications'
-                                (VITA) preferences. The data preprocessing portion invloved two parts. The first part was projecting all data to the local provinces projection and datum, i.e. NAD 1983 BC Environment Albers. The second part was
-                                clipping all the data to the extent of Vancouver Island.
+                            <p class="ContentParagraph"> The Data Preprocessing portion involved taking what was previously mentioned in the first paragraph and editing the data according to Vancouver Island Trail Association's (VITA) preferences.
+				The data preprocessing portion involved two parts. The first part was projecting all data to the local province's projection and datum, i.e. NAD 1983 BC Environment Albers. The second part was clipping all the data to
+				the extent of Vancouver Island.
                             </p>
                             <p class="ContentParagraph"> The Spatial Analysis portion involved taking the projected and clipped data and doing some analysis on the data. Firstly, merging was done to the geology data as they were split into two for
-                                the whole island; this was done to reduce repetition of data and make it more readable. Lastly, generalizing of contours and streams was done by removing incremetns and lengths less than a threshold our client
-                                had sepcified.
+				the whole island; this was done to reduce the repetition of data and make it more readable. Lastly, generalizing of contours and streams was done by removing increments and lengths less than a threshold our client had specified.
                             </p>
                         </div>
                     </article>
@@ -72,27 +72,27 @@
                 <!-- Start of Interactive Web Map -->
                 <article class="ContentParagraph">
                     <h3 class="underlineTitle">Interactive Web Map</h3> 
-                    <p>The web map would involve developing the necessary web infrastructure in order to create a stand-alone web map application</p>
+                    <p>The web map would involve developing the necessary web infrastructure in order to create a standalone web map application.</p>
                     
                     <!-- Template for content with text and big image below -->
                     <h4>Workflow Chart</h4>
                     <p class="ContentParagraph">Development of the interactive web-map would follow directly after the geodatabase which would provide the processed data layers. 
-                        It largely followed a linear sequence of events as depicted below</p>
+                        It largely followed a linear sequence of events depicted below</p>
                     <a href="images/webmapflowchart.JPG"><img class="solutionImage" src="images/webmapflowchart.JPG" alt="Relevant Big Image"></a>
                     
                     <!-- Template for content with text and small image on right -->
                     <article class = "serve leftText">
                         <div class="textZone">
                             <h4>Elements of the Process</h4>
-                            <p class="ContentParagraph">The process illustrated in the flowchart above makes use of <b>Web technologies</b>, <b>Cartographic Visualization Principles</b> and <b>Web Programming</b> to bring the interactive web map to life.</p>
+                            <p class="ContentParagraph">The process illustrated in the flowchart above uses <b>Web technologies</b>, <b>Cartographic Visualization Principles</b> and <b>Web Programming</b> to bring the interactive web map to life.</p>
                             <h5>Web Technologies</h5>
-                            <p class="ContentParagraph">ArcGIS Online (AGOL) would be used as the primary Software-as-a-Service Product, being used as the cloud infrastructure to manage and consume the data layers into a 3-dimensional web-scene.
-                                ArcGIS Platform would be used to bring Esri mapping tools, data and location services into the web-map as interactivity features to enhance user experience and embed the web-scene onto a standalone Web Map application (see programming below).
-                                GitHub would be used as the hosting platform for this web map application.
+                            <p class="ContentParagraph">ArcGIS Online (AGOL) was used as the primary Software-as-a-Service Product and was used as the cloud infrastructure to manage and consume the data layers into a 3-dimensional web scene. ArcGIS
+				Platform would be used to bring Esri mapping tools, data and location services into the web map as interactivity features to enhance user experience and embed the web scene onto a standalone Web Map application (see programming below).
+				GitHub is used as the hosting platform for this web map application.
                             </p>
                             <h5>Programming</h5>
-                            <p class="ContentParagraph">Web-coding would use ArcGIS API for JavaScript to enable interactivity features and embed the web-scene as a stand-alone web map application onto an HTML webpage. 
-                                HTML + CSS coding would be used for additional formatting that would aid in bolstering cartographic visualization of the user interface.
+                            <p class="ContentParagraph">Web coding would use ArcGIS API for JavaScript to enable interactivity features and embed the web scene as a standalone web map application onto an HTML webpage. HTML + CSS coding was used for additional formatting
+				that would aid in bolstering the cartographic visualization of the user interface.
                             </p>
                         </div>
                     </article>
@@ -101,28 +101,26 @@
                <!-- Start of Offline Viewing Functionality -->
                 <article class="ContentParagraph">
                     <h3 class="underlineTitle">Solution for Offline Viewing</h3> 
-                    <p>The offline viewing solution involves creating downloadable files that can be access on an offline capable navigation app such as 
-                    <i>Avenza Maps: Offline Mapping</i> on a mobile device (smart phone).</p>
+                    <p>The offline viewing solution involves creating downloadable files that are accessed on an offline-capable navigation app such as 
+                    <i>Avenza Maps: Offline Mapping</i> on a mobile device (smartphone).</p>
                     
                     <!-- Workflow for this deliverable -->
                     <h4>Workflow Diagram</h4>
-                    <p>Development of the Offline Viewing resources would follow directly after the geodatabase, with reference with the interactive web 
-                    map to keep consistancy with the symbologies and stylings between the two parts. It is a mostly linear process, with a small section of iterative steps 
-                    as a part of the whole proces. It involves finding the optimal methods of creating files from the geodatabase to the offline navigations maps operating 
-                    on the <i>Avenza Maps: Offline Mapping</i> mobile app.</p>
+                    <p>Development of the Offline Viewing resources would follow directly after the geodatabase, with reference to the interactive web map to keep consistency with the symbologies and stylings between the two parts. It is a mostly linear process, with a small
+			section of iterative steps as a part of the whole process. It involves finding the optimal methods of creating files from the geodatabase to the offline navigation maps operating on the <i> Avenza Maps: Offline Mapping </i> mobile app.</p>
                     <a href="images/Offline_Maps_WorkflowModel.png"><img class="solutionImage" src="images/Offline_Maps_WorkflowModel.png" alt="Offline Viewing Workflow"></a>
 
                     <!-- Template for content with text and small image on right -->
                     <article class = "serve leftText">
                         <div class="textZone">
                             <h4>Elements of the Process</h4>
-                            	<p class="ContentParagraph">The process illustrated in the flowchart above makes use of <b>Data acquisition and processing</b> and <b>Cartographic Visualization Principles</b> to make offline viewing possible.</p>
-                            <h5>Data Acquisition and Processing</h5>
-				                <p class="ContentParagraph">ArcGIS Pro is used to group and convert layers into KMZ format using the "Layer to KML" tool from the ArcGIS Pro Toolbox, after they are symbolized correctly. These files carries different 
-                                projection (WGS1984) from the geodatabase. And thus needs to make sure that there are no incompatiblity with PDF base maps which has different projection.
+                            	<p class="ContentParagraph">The process illustrated in the flowchart above makes use of <b>Data Acquisition and Preprocessing</b> and <b>Cartographic Visualization Principles</b> to make offline viewing possible.</p>
+                            <h5>Data Acquisition and Preprocessing</h5>
+				                <p class="ContentParagraph">ArcGIS Pro is used to group and convert layers into KMZ format using the "Layer to KML" tool from the ArcGIS Pro Toolbox after symbolizing them correctly. These files carry different projections (WGS1984) from the
+							geodatabase. Thus, check that there is no incompatibility with PDF base maps that have a different projection system.
                                 </p>
                             <h5>Cartographic Visualization Principles</h5>
-                            	<p class="ContentParagraph">PDF base maps are produced with "Export Layout" function in ArcGIS Pro. Layers are styled and symbolized the same way as the interactive web map to keep consistancy, before conversion.
+                            	<p class="ContentParagraph">Produced the PDF base maps with the "Export Layout" function in ArcGIS Pro. Layers are styled and symbolized the same way as the interactive web map for consistency before conversion.
                                 </p>
                         </div>
                     </article>
