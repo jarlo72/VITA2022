@@ -46,7 +46,7 @@
     // AAPK9deb0172a1fa4828a43eb0c74207b4cc82o68SGsMzg6oorNK5Pphvp4seYb7bM00wkdqin0Aqonuifp1tJ47g4pmjFwIp_P // this is the api key from VITA's developer account which will continue after august, committed using VITA github
       esriConfig.apiKey = "AAPKafe6cece6b3c4b9c87187d48725b5e00VnU7KKuFgK778kAvYJpx4ZC8w-ABB6lZWCVAT2CnL5q96pcPfg9TcuDZxJmK6_-9"; // temporary API key linked to fleming students accounts which will be discontinued
       const webscene = new WebScene({ // Creating a 3d web-scene from https://developers.arcgis.com/javascript/latest/display-a-web-scene/
-        portalItem: {
+        portalItem: { // VITA webscene: 110d6f049d3f4ffea4e9bbae5828b5c7 Fleming webscene: 167cddd5d4a5400490a76ca0d5119617
           id: "167cddd5d4a5400490a76ca0d5119617"
         }
       });
@@ -78,7 +78,8 @@
           content: layerList
         });
       view.ui.add(llExpand, "top-right");
-
+      
+    
 
       // Display and tracking location for mobile functionality. From https://developers.arcgis.com/javascript/latest/display-your-location/
 
